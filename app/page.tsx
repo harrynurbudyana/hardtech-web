@@ -368,7 +368,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Phone</p>
-                <p className="mt-2 text-slate-600">+1 (555) 123-4567</p>
+                <p className="mt-2 text-slate-600">+62 878 2455-1401</p>
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Location</p>
