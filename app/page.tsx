@@ -5,30 +5,33 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-lg">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="text-xl font-semibold tracking-tight">HardTech</div>
+          <div className="flex items-center gap-2">
+            <Image src="/hardtech-logo.svg" alt="Logo" width={50} height={50} />
+            <div className="text-xl font-semibold tracking-tight">HardTech</div>
+          </div>
           <div className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
-            <a href="#home" className="transition hover:text-slate-950">
+            <a href="#home" className="transition hover:text-blue-600">
               Home
             </a>
-            <a href="#about" className="transition hover:text-slate-950">
+            <a href="#about" className="transition hover:text-blue-600">
               About us
             </a>
-            <a href="#services" className="transition hover:text-slate-950">
+            <a href="#services" className="transition hover:text-blue-600">
               Our Services
             </a>
-            <a href="#projects" className="transition hover:text-slate-950">
+            <a href="#projects" className="transition hover:text-blue-600">
               Curated Projects
             </a>
-            <a href="#team" className="transition hover:text-slate-950">
+            <a href="#team" className="transition hover:text-blue-600">
               Our Teams
             </a>
-            <a href="#contacts" className="transition hover:text-slate-950">
+            <a href="#contacts" className="transition hover:text-blue-600">
               Contacts
             </a>
           </div>
           <a
             href="#contacts"
-            className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
+            className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
           >
             Contact us
           </a>
@@ -36,13 +39,15 @@ export default function Home() {
       </header>
 
       <main className="mx-auto flex w-full max-w-7xl flex-col gap-24 px-6 py-10">
-        <section id="home" className="space-y-8 pt-8">
+        <section id="home" className="space-y-8 pt-8 flex flex-row">
           <div className="max-w-3xl space-y-6">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
               Welcome to HardTech
             </p>
             <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-              Building modern companies with thoughtful digital products.
+              Building modern companies with{" "}
+              <span className="text-blue-700">thoughtful</span> digital
+              products.
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-slate-600">
               We craft high-quality websites, services, and project experiences
@@ -51,7 +56,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
                 href="#services"
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
+                className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
               >
                 Explore services
               </a>
@@ -63,6 +68,13 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <Image
+            src="/data-center-room.png"
+            alt="Logo"
+            width={400}
+            height={400}
+            className="ml-auto"
+          />
         </section>
 
         <section
@@ -75,7 +87,8 @@ export default function Home() {
                 About us
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">
-                Complete IT Solutions for Businesses of All Sizes.
+                Complete IT Solutions for Businesses of{" "}
+                <span className="text-blue-700">All Sizes</span>.
               </h2>
               <p className="mt-4 text-slate-600 leading-8 text-justify">
                 HardTech IT Solution is an Indonesian-based IT consulting firm
@@ -87,15 +100,31 @@ export default function Home() {
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl bg-slate-50 p-6">
-                <p className="text-sm font-semibold text-slate-900">Vision</p>
+              <div className="rounded-3xl bg-slate-50 p-6 text-center">
+                <Image
+                  src="/vision.svg"
+                  alt="Logo"
+                  width={50}
+                  height={50}
+                  className="m-auto my-3"
+                />
+                <p className="text-base font-semibold text-slate-900">Vision</p>
                 <p className="mt-2 text-slate-600">
                   Indonesia&apos;s catalyst for integrated digital
                   transformation and hardware-software synergy.
                 </p>
               </div>
-              <div className="rounded-3xl bg-slate-50 p-6">
-                <p className="text-sm font-semibold text-slate-900">Approach</p>
+              <div className="rounded-3xl bg-slate-50 p-6 text-center">
+                <Image
+                  src="/approach.svg"
+                  alt="Logo"
+                  width={50}
+                  height={50}
+                  className="m-auto my-3"
+                />
+                <p className="text-base font-semibold text-slate-900">
+                  Approach
+                </p>
                 <p className="mt-2 text-slate-600">
                   We listen and align with your goals, moving rapidly to deliver
                   secure, end-to-end technology.
@@ -111,15 +140,23 @@ export default function Home() {
               Our Services
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-slate-950">
-              Scalable Tech Services to Power Your Business Growth
+              Scalable Tech Services to{" "}
+              <span className="text-blue-700">Power Your Business</span> Growth
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             <article className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200/50">
+              <Image
+                src="/devsecops.svg"
+                alt="Logo"
+                width={120}
+                height={120}
+                className="m-auto my-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 DevSecOps & Infrastructure Reliability
               </h3>
-              <p className="mt-3 text-slate-600 leading-7">
+              <p className="mt-3 text-slate-600 leading-7 text-justify">
                 Ensuring high availability across your entire infrastructure. We
                 manage everything from core bare-metal servers to modern
                 microservices, applying continuous patching and automated
@@ -127,29 +164,57 @@ export default function Home() {
               </p>
             </article>
             <article className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200/50">
+              <Image
+                src="/backend.svg"
+                alt="Logo"
+                width={120}
+                height={120}
+                className="m-auto my-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
-                Backend & System Architecture
+                Backend Developer & System Architecture
               </h3>
-              <p className="mt-3 text-slate-600 leading-7">
-                Building scalable and efficient server-side foundations
+              <p className="mt-3 text-slate-600 leading-7 text-justify">
+                Engineering scalable server-side solutions and efficient system
+                architectures. From database optimization to API orchestration,
+                building the high-performance foundations that power seamless
+                digital products.
               </p>
             </article>
             <article className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200/50">
+              <Image
+                src="/hardware.svg"
+                alt="Logo"
+                width={120}
+                height={120}
+                className="m-auto my-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 Hardware Engineering & IoT Integration
               </h3>
-              <p className="mt-3 text-slate-600 leading-7">
-                Bridging the physical and digital worlds with custom hardware
-                solutions
+              <p className="mt-3 text-slate-600 leading-7 text-justify">
+                End-to-end IoT ecosystems bridging physical and digital worlds.
+                Integrating precision PCB prototyping, advanced firmware, and
+                cloud architecture to deliver industrial-grade systems optimized
+                for connectivity, security, and long-term stability.
               </p>
             </article>
             <article className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200/50">
+              <Image
+                src="/uiux.svg"
+                alt="Logo"
+                width={120}
+                height={120}
+                className="m-auto my-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 Product Design & UI/UX Experience
               </h3>
-              <p className="mt-3 text-slate-600 leading-7">
-                Transforming complex ideas into intuitive, user-centric
-                interfaces
+              <p className="mt-3 text-slate-600 leading-7 text-justify">
+                Creating purposeful digital experiences through human-centered
+                design. We turn complex ideas into intuitive interfaces using
+                deep research, interactive prototyping, and testing to ensure a
+                seamless experience that helps your business grow.
               </p>
             </article>
           </div>
@@ -161,7 +226,8 @@ export default function Home() {
               Curated Projects
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-slate-950">
-              Proven Innovations that Align Technology with Business Goals
+              <span className="text-blue-700">Proven Innovations</span> that
+              Align Technology with Business Goals
             </h2>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -293,7 +359,8 @@ export default function Home() {
               Our Teams
             </p>
             <h2 className="text-3xl font-semibold text-slate-950">
-              A small team with broad expertise.
+              A small team with{" "}
+              <span className="text-blue-700">broad expertise</span>.
             </h2>
             <p className="max-w-2xl text-slate-600 leading-8">
               Our team mixes product thinkers, designers, and engineers who work
@@ -302,12 +369,26 @@ export default function Home() {
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <Image
+                src="/research.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+                className="m-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">Strategy</h3>
               <p className="mt-3 text-slate-600 leading-7">
                 Research, product direction, and business alignment.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <Image
+                src="/cloud.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+                className="m-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 Cloud and DevOps
               </h3>
@@ -317,6 +398,13 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <Image
+                src="/engineering.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+                className="m-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 Engineering
               </h3>
@@ -325,12 +413,26 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <Image
+                src="/design.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+                className="m-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">Design</h3>
               <p className="mt-3 text-slate-600 leading-7">
                 Brand systems, interfaces, and motion that feel considered.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <Image
+                src="/iot.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+                className="m-3"
+              />
               <h3 className="text-xl font-semibold text-slate-950">
                 Hardware Engineering
               </h3>
@@ -351,10 +453,18 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
                 Contacts
               </p>
-              <h2 className="mt-3 text-3xl font-semibold text-slate-950">
-                Get in touch with HardTech.
+              <Image
+                src="/getintouch.svg"
+                alt="Logo"
+                width={72}
+                height={72}
+                className="m-auto mb-5"
+              />
+              <h2 className="mt-3 text-3xl font-semibold text-slate-950 text-center">
+                <span className="text-blue-700">Get in touch</span> with
+                HardTech.
               </h2>
-              <p className="mt-4 max-w-xl text-slate-600 leading-8">
+              <p className="mt-4 max-w-xl text-slate-600 leading-8 text-center">
                 Whether you are starting a new project, exploring collaboration,
                 or need a web partner, we are here to help.
               </p>
