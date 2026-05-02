@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeModeScript } from 'flowbite-react';
-
+import { ThemeModeScript } from "flowbite-react";
+import AOSInit from "@/components/AOSInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HardTech | Company Website",
-  description: "HardTech company website showcasing services, projects, team, and contact details.",
+  description:
+    "HardTech company website showcasing services, projects, team, and contact details.",
 };
 
 export default function RootLayout({
@@ -30,10 +31,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-       <head>
-                <ThemeModeScript />
+      <head>
+        <ThemeModeScript />
       </head>
-      <body className="min-h-full bg-slate-50 text-slate-900">{children}</body>
+      <body className="min-h-full bg-slate-50 text-slate-900">
+        <AOSInit /> {/* init AOS */}
+        {children}
+      </body>
     </html>
   );
 }

@@ -40,7 +40,7 @@ export default function Home() {
 
       <main className="mx-auto flex w-full max-w-7xl flex-col gap-24 px-6 py-10">
         <section id="home" className="space-y-8 pt-8 flex flex-row">
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl space-y-6" data-aos="fade-right">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
               Welcome to HardTech
             </p>
@@ -74,12 +74,14 @@ export default function Home() {
             width={400}
             height={400}
             className="ml-auto"
+            data-aos="fade-left"
           />
         </section>
 
         <section
           id="about"
           className="rounded-3xl bg-white p-8 shadow-sm shadow-slate-200/50"
+          data-aos="zoom-in-down"
         >
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
@@ -144,7 +146,11 @@ export default function Home() {
               <span className="text-blue-700">Power Your Business</span> Growth
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div
+            className="grid gap-6 md:grid-cols-3"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <article className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200/50">
               <Image
                 src="/devsecops.svg"
@@ -231,7 +237,11 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 Infrastructure & Cloud Migration
               </p>
@@ -244,7 +254,11 @@ export default function Home() {
                 operational uptime without full system re-engineering.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 DevOps Engineering
               </p>
@@ -257,7 +271,11 @@ export default function Home() {
                 lightweight operations.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 DevOps Engineering
               </p>
@@ -270,7 +288,11 @@ export default function Home() {
                 guarantee resource isolation and security.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 Cloud Infrastructure Management.
               </p>
@@ -284,7 +306,11 @@ export default function Home() {
                 DB.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 Backend Developer
               </p>
@@ -299,7 +325,11 @@ export default function Home() {
                 charging hardware and the monitoring dashboard.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 Frontend Developer
               </p>
@@ -314,7 +344,11 @@ export default function Home() {
                 fleet and infrastructure management.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 UI/UX Designer
               </p>
@@ -330,7 +364,11 @@ export default function Home() {
                 consultants and their clients.
               </p>
             </article>
-            <article className="rounded-3xl bg-slate-950 p-6 text-white">
+            <article
+              className="rounded-3xl bg-slate-950 p-6 text-white"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-slate-300">
                 Hardware Engineering
               </p>
@@ -353,6 +391,8 @@ export default function Home() {
         <section
           id="team"
           className="rounded-3xl bg-white p-8 shadow-sm shadow-slate-200/50"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         >
           <div className="space-y-6">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
@@ -447,6 +487,7 @@ export default function Home() {
         <section
           id="contacts"
           className="rounded-3xl bg-white p-8 shadow-sm shadow-slate-200/50"
+          data-aos="fade-up"
         >
           <div className="grid gap-8 lg:grid-cols-2">
             <div>
