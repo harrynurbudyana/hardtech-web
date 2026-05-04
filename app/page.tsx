@@ -39,7 +39,10 @@ export default function Home() {
       </header>
 
       <main className="mx-auto flex w-full max-w-7xl flex-col gap-24 px-6 py-10">
-        <section id="home" className="space-y-8 pt-8 flex flex-row">
+        <section
+          id="home"
+          className="space-y-8 pt-8 flex flex-col-reverse lg:flex-row"
+        >
           <div className="max-w-3xl space-y-6" data-aos="fade-right">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
               Welcome to HardTech
@@ -73,7 +76,7 @@ export default function Home() {
             alt="Logo"
             width={400}
             height={400}
-            className="ml-auto"
+            className="ml-auto mb-5 lg:mb-0"
             data-aos="fade-left"
           />
         </section>
