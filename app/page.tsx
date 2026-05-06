@@ -6,7 +6,7 @@ export default function Home() {
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-lg">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
-            <Image src="/hardtech-logo.svg" alt="Logo" width={50} height={50} />
+            <Image src="/hardtech-logo.svg" alt="Logo" width={50} height={50} priority />
             <div className="text-xl font-semibold tracking-tight">HardTech</div>
           </div>
           <div className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
@@ -45,7 +45,7 @@ export default function Home() {
         >
           <div className="max-w-3xl space-y-6" data-aos="fade-right">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
-              Welcome to HardTech
+              Welcome to HardTech IT Solution
             </p>
             <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               Building modern companies with{" "}
@@ -72,10 +72,11 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src="/data-center-room.png"
+            src="/data-center-room.avif"
             alt="Logo"
             width={400}
             height={400}
+            priority
             className="ml-auto mb-5 lg:mb-0"
             data-aos="fade-left"
           />
@@ -522,7 +523,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Phone</p>
-                <p className="mt-2 text-slate-600">+62 878 2455-1401</p>
+                <p className="mt-2 text-slate-600">+62 851-4844-3939</p>
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Location</p>
