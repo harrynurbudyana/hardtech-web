@@ -523,7 +523,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Phone</p>
-                <p className="mt-2 text-slate-600">+62 851-4844-3939</p>
+                <a href="https://wa.me/+6285148443939" className="hover:underline"><p className="mt-2 text-slate-600">+62 851-4844-3939</p></a>
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Location</p>
