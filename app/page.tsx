@@ -6,7 +6,13 @@ export default function Home() {
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-lg">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
-            <Image src="/hardtech-logo.svg" alt="Logo" width={50} height={50} priority />
+            <Image
+              src="/hardtech-logo.svg"
+              alt="Logo"
+              width={50}
+              height={50}
+              priority
+            />
             <div className="text-xl font-semibold tracking-tight">HardTech</div>
           </div>
           <div className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
@@ -136,6 +142,57 @@ export default function Home() {
                   secure, end-to-end technology.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Partners */}
+        <section id="partners" className="space-y-4">
+          <div className="text-center py-4">
+            <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
+              Our Partners
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold text-slate-950">
+              Partners in <span className="text-blue-700">Growth</span>
+            </h2>
+          </div>
+
+          <div className="relative overflow-hidden rounded-3xl bg-white py-8">
+            {/* gradient efek */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-linear-to-r from-slate-50 to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-linear-to-l from-slate-50 to-transparent" />
+
+            <div className="flex w-max animate-marquee gap-0 hover:[animation-play-state:paused]">
+              {/* efek seamless */}
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex">
+                  {[
+                    { src: "/greentech-logo.svg", name: "Green Tech" },
+                    { src: "/telu-logo.svg", name: "Telkom Unversity" },
+                    { src: "/smartev-logo.svg", name: "Smart EV" },
+                    { src: "/puti-logo.svg", name: "PUTI" },
+                    { src: "/labfit-logo.svg", name: "Lab FIT" },
+                    { src: "/torsiev-logo.svg", name: "Torsi EV" },
+                    { src: "/volta-light-logo.svg", name: "Volta" },
+                    { src: "/dms.svg", name: "DMS" },
+                  ].map((partner) => (
+                    <div
+                      key={partner.name + i}
+                      className="flex items-center px-10"
+                    >
+                      <div className="flex items-center gap-3 rounded-2xl px-5 py-3 transition hover:border-blue-200 hover:shadow-md hover:shadow-slate-100">
+                        <Image
+                          src={partner.src}
+                          alt={partner.name}
+                          width={0}
+                          height={0}
+                          className="h-14 w-auto object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -523,7 +580,12 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Phone</p>
-                <a href="https://wa.me/+6285148443939" className="hover:underline"><p className="mt-2 text-slate-600">+62 851-4844-3939</p></a>
+                <a
+                  href="https://wa.me/+6285148443939"
+                  className="hover:underline"
+                >
+                  <p className="mt-2 text-slate-600">+62 851-4844-3939</p>
+                </a>
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">Location</p>
