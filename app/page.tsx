@@ -175,6 +175,8 @@ export default function Home() {
                     { src: "/torsiev-logo.svg", name: "Torsi EV" },
                     { src: "/volta-light-logo.svg", name: "Volta" },
                     { src: "/dms.svg", name: "DMS" },
+                    { src: "/lora-id.png", name: "Lora ID" },
+                    { src: "/logo_antares.svg", name: "Antares" },
                   ].map((partner) => (
                     <div
                       key={partner.name + i}
