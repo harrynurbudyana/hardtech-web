@@ -577,7 +577,9 @@ export default function Home() {
               <div>
                 <p className="text-sm font-semibold text-slate-900">Email</p>
                 <p className="mt-2 text-slate-600">
-                  customer@hardtechsolution.com
+                  <a href="mailto:customer@hardtechsolution.com" className="hover:underline">
+                    customer@hardtechsolution.com
+                  </a>
                 </p>
               </div>
               <div>
