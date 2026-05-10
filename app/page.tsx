@@ -577,7 +577,7 @@ export default function Home() {
               <div>
                 <p className="text-sm font-semibold text-slate-900">Email</p>
                 <p className="mt-2 text-slate-600">
-                  hello@hardtechsolution.com
+                  customer@hardtechsolution.com
                 </p>
               </div>
               <div>
